@@ -16,4 +16,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . Dockerfile --tag viswa:$(date +%s)
+      run: docker build . --file .github/workflows/Dockerfile --tag viswa:$(date +%s)
