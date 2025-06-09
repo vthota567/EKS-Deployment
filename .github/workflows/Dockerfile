@@ -3,7 +3,7 @@
 FROM node:16
 
 # Set the working directory in the container
-WORKDIR .github/workflows/app
+WORKDIR app
 
 # Copy the package.json and package-lock.json files to the container
 COPY package*.json ./
